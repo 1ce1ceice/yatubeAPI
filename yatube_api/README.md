@@ -30,7 +30,7 @@ http://127.0.0.1:8000/redoc/
 
 ## 1. Клонирование репозитория
 
-    git clone <URL_вашего_репозитория>
+    git clone git@github.com:1ce1ceice/yatubeAPI.git
     cd yatube_api
 
 ## 2. Создание виртуального окружения
