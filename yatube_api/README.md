@@ -4,10 +4,10 @@ REST API для социальной сети публикаций **Yatube**
 
 Проект реализован на Django REST Framework и предоставляет возможность:
 
--   создавать публикации\
--   оставлять комментарии\
--   подписываться на авторов\
--   просматривать сообщества\
+-   создавать публикации
+-   оставлять комментарии
+-   подписываться на авторов
+-   просматривать сообщества
 -   использовать JWT-аутентификацию
 
 После запуска проекта документация доступна по адресу:
@@ -18,10 +18,10 @@ http://127.0.0.1:8000/redoc/
 
 # Технологии
 
--   Python 3.9\
--   Django 3.2\
--   Django REST Framework\
--   Simple JWT\
+-   Python 3.9
+-   Django 3.2
+-   Django REST Framework
+-   Simple JWT
 -   SQLite3
 
 ------------------------------------------------------------------------
@@ -106,32 +106,32 @@ Authorization: Bearer `<access_token>`{=html}
 
 ## Публикации
 
-GET /api/v1/posts/\
+GET /api/v1/posts/
 POST /api/v1/posts/\
-GET /api/v1/posts/{id}/\
-PUT /api/v1/posts/{id}/\
-PATCH /api/v1/posts/{id}/\
+GET /api/v1/posts/{id}/
+PUT /api/v1/posts/{id}/
+PATCH /api/v1/posts/{id}/
 DELETE /api/v1/posts/{id}/
 
 Поддерживается пагинация с параметрами limit и offset.
 
 ## Комментарии
 
-GET /api/v1/posts/{post_id}/comments/\
-POST /api/v1/posts/{post_id}/comments/\
-GET /api/v1/posts/{post_id}/comments/{id}/\
-PUT /api/v1/posts/{post_id}/comments/{id}/\
-PATCH /api/v1/posts/{post_id}/comments/{id}/\
+GET /api/v1/posts/{post_id}/comments/
+POST /api/v1/posts/{post_id}/comments/
+GET /api/v1/posts/{post_id}/comments/{id}/
+PUT /api/v1/posts/{post_id}/comments/{id}/
+PATCH /api/v1/posts/{post_id}/comments/{id}/
 DELETE /api/v1/posts/{post_id}/comments/{id}/
 
 ## Сообщества
 
-GET /api/v1/groups/\
+GET /api/v1/groups/
 GET /api/v1/groups/{id}/
 
 ## Подписки
 
-GET /api/v1/follow/\
+GET /api/v1/follow/
 POST /api/v1/follow/
 
 Тело запроса:
@@ -144,11 +144,11 @@ POST /api/v1/follow/
 
 # Права доступа
 
--   Неаутентифицированные пользователи имеют доступ только для чтения\
+-   Неаутентифицированные пользователи имеют доступ только для чтения
 -   Создание, изменение и удаление объектов доступно только
-    авторизованным пользователям\
+    авторизованным пользователям
 -   Редактировать и удалять публикации и комментарии может только их
-    автор\
+    автор
 -   Эндпоинт /follow/ доступен только авторизованным пользователям
 
 ------------------------------------------------------------------------
